@@ -1,0 +1,10 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs y temporales de corridas
+*.log
