@@ -8,3 +8,6 @@ __pycache__/
 
 # Logs y temporales de corridas
 *.log
+
+# Notas de trabajo con Claude Code (no forma parte de la entrega)
+CLAUDE.md
