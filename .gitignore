@@ -11,3 +11,5 @@ __pycache__/
 
 # Notas de trabajo con Claude Code (no forma parte de la entrega)
 CLAUDE.md
+
+.vscode/
