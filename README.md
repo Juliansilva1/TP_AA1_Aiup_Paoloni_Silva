@@ -11,32 +11,25 @@ Facultad de Ciencias Exactas, Ingeniería y Agrimensura — Universidad Nacional
 
 ## Contenido
 
-| | Trabajo | Notebook | Estado |
-|---|---|---|---|
-| **TP 1** | Regresión: predicción de precios de viviendas | [`TP_1/TP-regresion-AA1.ipynb`](TP_1/TP-regresion-AA1.ipynb) | Entregado |
-| **TP 2** | Clasificación | `TP_2/TP-clasificacion-AA1.ipynb` | Pendiente |
-
-### TP 1 — Predicción de precios de viviendas
-
-Se predice el valor mediano de viviendas de Boston (`MEDV`, en miles de dólares) a partir de 13 variables que describen cada barrio, mediante **regresión lineal múltiple**.
-
-El trabajo recorre el análisis descriptivo del conjunto de datos (tratamiento de valores faltantes, detección de atípicos, matriz de correlación, escalado y partición en entrenamiento y prueba) y luego compara siete formas de resolver el mismo problema:
-
-- Regresión lineal por **mínimos cuadrados**.
-- **Descenso por el gradiente** en sus tres variantes: por lotes, estocástico y mini-batch, calculado con las funciones provistas por la cátedra.
-- **Regularización**: Ridge, Lasso y ElasticNet, con sus hiperparámetros elegidos por validación cruzada.
+| | Trabajo | Notebook |
+|---|---|---|
+| **TP 1** | Regresión: predicción de precios de viviendas | [`TP_1/TP-regresion-AA1.ipynb`](TP_1/TP-regresion-AA1.ipynb) |
+| **TP 2** | Clasificación: prediccion de lluvia en Australia  | [`TP_2/TP-clasificacion-AA1.ipynb`](TP_2/TP-clasificacion-AA1.ipynb) |
 
 ## Estructura del repositorio
 
 ```
 TP_AA1_Aiup_Paoloni_Silva/
 ├── TP_1/
-│   └── TP-regresion-AA1.ipynb    # notebook del TP de regresión
+│   └── TP-regresion-AA1.ipynb          # notebook TP de regresión
+|   └── TP-regresion-AA1-v2.ipynb       # notebook TP de regresión v2
 ├── data/
-│   └── house-prices-tp.csv       # conjunto de datos
+│   └── house-prices-tp.csv             # conjunto de datos regresión
+|   └── weatherAUS_2026C2.csv           # conjunto de datos clasificación
 ├── docs/
-│   └── TP_AA1_Consigna.pdf       # consigna de la cátedra
-└── requirements.txt              # dependencias
+│   └── TP_AA1_TP_Clasificacion.pdf     # consigna TP regresión
+|   └── TP_AA1_TP_Regresion.pdf         # consigna TP clasificacion
+└── requirements.txt                    # dependencias
 ```
 
 ## Cómo ejecutar
