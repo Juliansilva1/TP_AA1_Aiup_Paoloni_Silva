@@ -1,10 +1,13 @@
-# Dependencias directas del TP de regresión (AA1).
-# Solo se listan las bibliotecas que el notebook importa de forma explícita;
+# Dependencias directas de los TP de regresión y clasificación (AA1).
+# Solo se listan las bibliotecas que los notebooks importan de forma explícita;
 # las dependencias transitivas (scipy, joblib, pillow, etc.) las resuelve pip.
-# Sin versiones fijas para que el entorno sea instalable en cualquier plataforma.
+# Sin versiones fijas para que el entorno sea instalable en cualquier plataforma,
+# salvo PyCaret (ver más abajo).
+#
+# Requiere Python 3.11 a 3.13: PyCaret todavía no soporta Python 3.14.
 #
 # Instalación:
-#   python -m venv .venv
+#   py -3.13 -m venv .venv
 #   .venv\Scripts\activate
 #   pip install -r requirements.txt
 
@@ -16,12 +19,22 @@ pandas
 matplotlib
 seaborn
 
-# Modelos de regresión, métricas, escalado y particiones train/test
+# Modelos, métricas, escalado y particiones train/test
 scikit-learn
 
-# Kernel de Jupyter para ejecutar el notebook
+# Explicabilidad de los modelos (TP de clasificación, ítem 5)
+shap
+
+# AutoML (TP de clasificación, ítem 6)
+# La versión estable (3.3.2) solo soporta Python 3.9 a 3.11. La 4.0, que soporta
+# 3.13, todavía es alfa: al indicar una pre-release en la versión mínima, pip la
+# acepta sin necesidad de pasar --pre.
+pycaret>=4.0.0a8
+
+# Kernel de Jupyter para ejecutar los notebooks
 ipykernel
 
-# Versiones utilizadas durante el desarrollo (Python 3.14):
-#   numpy 2.5.3 | pandas 3.0.5 | matplotlib 3.11.1
-#   seaborn 0.13.2 | scikit-learn 1.9.0 | ipykernel 7.3.0
+# Versiones utilizadas durante el desarrollo (Python 3.13):
+#   numpy 2.5.4 | pandas 3.1.1 | matplotlib 3.11.2
+#   seaborn 0.13.2 | scikit-learn 1.9.1 | ipykernel 7.4.0
+#   pycaret 4.0.0a8 | shap 0.54.1
