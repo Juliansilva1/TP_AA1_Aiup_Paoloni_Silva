@@ -31,10 +31,13 @@ shap
 # acepta sin necesidad de pasar --pre.
 pycaret>=4.0.0a8
 
+# Redes neuronales (TP de clasificación, ítem 7)
+tensorflow
+
 # Kernel de Jupyter para ejecutar los notebooks
 ipykernel
 
 # Versiones utilizadas durante el desarrollo (Python 3.13):
 #   numpy 2.5.4 | pandas 3.1.1 | matplotlib 3.11.2
 #   seaborn 0.13.2 | scikit-learn 1.9.1 | ipykernel 7.4.0
-#   pycaret 4.0.0a8 | shap 0.54.1
+#   pycaret 4.0.0a8 | shap 0.54.1 | tensorflow 2.21.0
